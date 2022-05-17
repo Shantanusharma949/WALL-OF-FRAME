@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+#logo {
+  padding-left: 2rem;
+  text-decoration: none;
+  font-family: "Bebas Neue", cursive;
+  color: black;
+  font-size: 2rem;
+}
+.forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+form input {
+  font-size: 1.5rem;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 0.5rem;
+}
+.search-form button {
+  padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+  font-family: "Bebas Neue", cursive;
+  border: none;
+  font-size: 1.5rem;
+  background: rgb(38, 38, 102);
+  color: white;
+}
+.gallery-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: gray;
+}
+.gallery-info a {
+  color: gray;
+  padding: 0.5rem 0rem;
+  text-decoration: none;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  padding: 2rem 0rem;
+  width: 80%;
+  margin: auto;
+  row-gap: 5rem;
+  column-gap: 3rem;
+}
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.nav-button {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.more {
+  border: none;
+  font-size: 1.2rem;
+  background: rgb(38, 38, 102);
+  color: white;
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
